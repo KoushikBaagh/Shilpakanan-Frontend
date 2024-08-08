@@ -4,6 +4,8 @@ import "./textAnimation.css";
 import Styles from "./HeroSection.module.css";
 import anime from "animejs/lib/anime.min.js";
 import { useGlobalContext } from "../../../context/context";
+import LazyLoad from "react-lazy-load";
+
 const HeroSection = () => {
   const { isAuth } = useGlobalContext();
   useEffect(() => {
@@ -53,15 +55,17 @@ const HeroSection = () => {
         </button>
       </div>
       <div className={Styles.leftSide}>
-        <video
-          src={require("./images/img/Shilpakanan_Phase-3_Drone.mp4")}
-          data-aos="fade-down"
-          autoPlay
-          muted
-          className={`${Styles.videoPlayer} ${Styles.media}`}
-        >
-          Your browser does not support the video element.
-        </video>
+        <LazyLoad>
+          <video
+            src={require("./images/img/Shilpakanan_Phase-3_Drone.mp4")}
+            data-aos="fade-down"
+            autoPlay
+            muted
+            className={`${Styles.videoPlayer} ${Styles.media}`}
+          >
+            Your browser does not support the video element.
+          </video>
+        </LazyLoad>
         <img
           src={require("./images/img/residency.webp?v=1")}
           data-aos="fade-left"

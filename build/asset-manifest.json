@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.9a219628.css",
-    "main.js": "/static/js/main.acbb4a9e.js",
-    "static/media/Shilpakanan_Phase-3_Drone.mp4": "/static/media/Shilpakanan_Phase-3_Drone.b26a3020618d6cbeddf9.mp4",
+    "main.js": "/static/js/main.dfb993b0.js",
+    "static/media/Shilpakanan_Phase-3_Drone.mp4": "/static/media/Shilpakanan_Phase-3_Drone.da831968386780fee2e2.mp4",
     "static/media/residency.webp?v=1": "/static/media/residency.f8850be7e0eaa2ea8910.webp",
     "index.html": "/index.html",
     "main.9a219628.css.map": "/static/css/main.9a219628.css.map",
-    "main.acbb4a9e.js.map": "/static/js/main.acbb4a9e.js.map"
+    "main.dfb993b0.js.map": "/static/js/main.dfb993b0.js.map"
   },
   "entrypoints": [
     "static/css/main.9a219628.css",
-    "static/js/main.acbb4a9e.js"
+    "static/js/main.dfb993b0.js"
   ]
 }
