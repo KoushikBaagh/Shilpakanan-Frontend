@@ -1,0 +1,221 @@
+.heroWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.rightSide {
+  width: 70%;
+  position: relative;
+  z-index: 2;
+}
+.rightSide h3 {
+  font-size: 30px;
+  margin-top: 0px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+.rightSide p {
+  margin-top: 5px;
+  width: 75%;
+  color: #6b6b6b;
+}
+.rightSide button {
+  padding: 12px 24px;
+  margin-top: 30px;
+  background: var(--secondary-color);
+}
+.leftSide {
+  text-align: end;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+.media {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgb(35, 32, 37);
+  overflow: hidden;
+}
+.videoPlayer {
+  position: relative;
+  border-radius: 10px !important;
+  width: 90%;
+  height: auto;
+  z-index: 2;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  contain: intrinsic block size 8px;
+}
+.videoPlayer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0.15);
+}
+.videoPlayer:active {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0.15);
+}
+.residencyImg {
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  height: 55%;
+  margin-right: 90px;
+  top: -70px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  contain: intrinsic;
+}
+.residencyImg:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0.15);
+}
+.residencyImg:active {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0.15);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+}
+.btn span {
+  color: white;
+  margin-top: 1p;
+}
+.btn div {
+  width: 40px;
+}
+.btn div img {
+  animation: arrow 1s infinite linear;
+  width: 20px;
+  position: relative;
+  margin-top: 3px;
+}
+@keyframes arrow {
+  0% {
+    margin-left: 20px;
+  }
+  50% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 1310px) {
+  .leftSide {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .heroWrapper {
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 855px) {
+  .rightSide h3 {
+    margin-top: 5px;
+  }
+  .rightSide p {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .heroWrapper {
+    flex-direction: column-reverse;
+    margin-top: 90px;
+  }
+  .houseImg {
+    display: none;
+  }
+  .residencyImg,
+  .leftSide,
+  .rightSide {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .residencyImg {
+    height: 300px;
+    margin: 0px;
+    top: 0px;
+    margin-top: 20px;
+  }
+  .rightSide p {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .rightSide button {
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .residencyImg {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .rightSide h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .heroWrapper {
+    margin-top: 65px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .rightSide p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 345px) {
+  .rightSide .hmargin {
+    margin-left: 0px;
+  }
+  .rightSide h3 {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .rightSide p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .rightSide h3 {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .rightSide p {
+    font-size: 12px;
+  }
+}
+
+/* .glassEffect {
+  background: rgba(123, 18, 214, 0.007);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(174, 117, 220, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(174, 117, 220, 0.3);
+  border-radius: 15px;
+  padding: 30px;
+} */
+@media (max-width: 768px) {
+  .videoPlayer {
+    width: 100%; /* Full width on smaller screens */
+    height: auto;
+  }
+
+  .residencyImg {
+    width: 70%; /* Adjust image size on smaller screens */
+    height: auto;
+  }
+}
