@@ -58,9 +58,11 @@ const HeroSection = () => {
         <LazyLoad>
           <video
             src={require("./images/img/Shilpakanan_Phase-3_Drone_Low.mp4")}
+            poster={require("./images/img/video-cover.png")}
             data-aos="fade-down"
             autoPlay
             muted
+            loop
             className={`${Styles.videoPlayer} ${Styles.media}`}
           >
             Your browser does not support the video element.
