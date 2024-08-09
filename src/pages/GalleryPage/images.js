@@ -1,6 +1,6 @@
-const images = [ 
-  "./images/gallery/img1.webp",
-  "./images/gallery/img2.webp",
+const images = [
+  "./images/img/shilpakanan2.jpg",
+  "./images/img/shilpakanan3.jpg",
   "./images/gallery/img3.webp",
   "./images/gallery/img4.webp",
   "./images/gallery/img5.webp",

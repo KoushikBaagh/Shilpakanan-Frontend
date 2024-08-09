@@ -58,7 +58,7 @@ const HeroSection = () => {
         <LazyLoad>
           <video
             src={require("./images/img/Shilpakanan_Phase-3_Drone_Low.mp4")}
-            poster={require("./images/img/video-cover.png")}
+            poster={require("./images/img/video-cover.webp?v=1")}
             data-aos="fade-down"
             autoPlay
             muted
