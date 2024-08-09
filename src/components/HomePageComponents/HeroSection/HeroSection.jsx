@@ -57,7 +57,7 @@ const HeroSection = () => {
       <div className={Styles.leftSide}>
         <LazyLoad>
           <video
-            src={require("./images/img/Shilpakanan_Phase-3_Drone.mp4")}
+            src={require("./images/img/Shilpakanan_Phase-3_Drone_Low.mp4")}
             data-aos="fade-down"
             autoPlay
             muted
